@@ -43,6 +43,47 @@ Here are the WhatNickThinks assets and site images that managed to be preserved,
 ![WhatNickThinks Feature Image (2015)](images/WhatNickThinks-Feature%282015%29.png)
 *Feature image from 2015 that was used across social media channels and blog articles.*
 
+## How to add an entry or an image
+
+The whole timeline lives in `index.html`, between the `THE TIMELINE` comment and `</main>`. Every year from 2008 to 2026 is one `<li class="year">`, grouped inside a `<section class="era">` for the platform the site was on. There's no build step: edit the HTML, commit, and GitHub Pages serves it. The scrub bar, its ticks and the lightbox pick up changes on their own.
+
+**Write about a year.** Find its `<li>` (for example `id="2016"`), replace `<p class="lost">Lost to time</p>` with your paragraphs, and add an empty slot for pictures under them:
+
+```html
+<p>What happened that year.</p>
+<div class="year__artifacts">
+  <p class="lost">Lost to time</p>
+</div>
+```
+
+**Add an image.**
+
+1. Put the file in `images/`.
+2. If it's a big screenshot, also save a copy about 1600 px wide in `images/small/` (on a Mac: `sips -Z 1600 -s format jpeg "images/Big.png" --out images/small/big.jpg`). Small images don't need one.
+3. In that year's `<div class="year__artifacts">`, replace the `Lost to time` line (if it's there) with a figure. The link is the full image, and the `img` is the one shown on the page:
+
+```html
+<figure class="artifact">
+  <a class="artifact__open" href="images/Big.png">
+    <img src="images/small/big.jpg" width="1600" height="991" loading="lazy" decoding="async" alt="What the image shows, for someone who can't see it.">
+    <span class="artifact__stamp" aria-hidden="true">JUN 01 2016</span>
+  </a>
+  <figcaption>
+    <p class="artifact__title">The homepage, June 2016</p>
+    <p>Your caption.</p>
+    <p class="artifact__source">Wayback Machine capture, 1 June 2016</p>
+  </figcaption>
+</figure>
+```
+
+Set `width` and `height` to the shown image's real size, and encode spaces and brackets in file names (`%20`, `%28`, `%29`), or give new files simple names.
+
+**Add a year** (say, before 2008): copy any `<li class="year">`, change its `id`, `datetime` and text, and put it in order. Years with nothing in them should stay in the list with `Lost to time`, so the gaps stay honest.
+
+**Placeholder copy.** Words that aren't Nick's yet carry a `data-placeholder` attribute and show with a dashed red underline. Replace them before they go live.
+
+**The letter** lives on its own page in `letter/`, unchanged.
+
 ## Updates
 
 WhatNickThinks is no longer being updated or maintained. This website/repo may be updated in the future. In April 2026, this repo was moved back to my personal account.

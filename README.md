@@ -7,7 +7,8 @@ WhatNickThinks.com was a website I used to run that published "reviews, rants, a
 WhatNickThinks would have never started if not for a fateful trip to Buckley's Tavern, circa 2008.
 - 2008: Received subpar buffalo wings and was urged to post my thoughts online. Shortly after, WhatNickThinks was published to Google Sites.
 - 2010: The first subdomain, WhatNickThinks.YolaSite.com, was purchased, ushering in a new era of design and website features.
-- 2012: The full domain, WhatNickThinks.com, was purchased, restaurant reviews stopped, and entertainment reviews began.
+- 2011: The full domain, WhatNickThinks.com, was purchased. Its first Wayback Machine capture is from 8 February 2011.
+- 2012: Restaurant reviews stopped, and entertainment reviews began.
 - 2015: WhatNickThinks transitioned from Yola for hosting/design to Squarespace.
 - 2019: WhatNickThinks.com was formally shut down for the final time.
 - 2022: The domain name, WhatNickThinks.com, was let to expire after 14 years of ownership.

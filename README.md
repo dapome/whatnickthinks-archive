@@ -31,6 +31,10 @@ Here are the WhatNickThinks assets and site images that managed to be preserved,
 
 ### Site Design Timeline
 
+#### February 2011
+![WhatNickThinks February 2011](images/WhatNickThinks%28Feb11%29.png)
+*The first capture of the WhatNickThinks.com domain, on 8 February 2011: the Yola page telling us that it was almost finished.*
+
 #### December 2013
 ![WhatNickThinks December 2013](images/WhatNickThinks%28Dec13%29.png)
 *The site's design from December 2013, showcasing the early Yola-based layout. I'm not convinced the website shipped like this, but you never know.*
